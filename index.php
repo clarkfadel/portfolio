@@ -20,6 +20,8 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $swiperCss; ?>"/>
+
+    <link rel="icon" type="image/x-icon" href="logo.ico">
 </head>
 <body>
     <!-- Navigation Bar -->
