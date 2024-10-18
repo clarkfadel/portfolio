@@ -156,9 +156,9 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
         <div class="footer">
             <h1>© 2024 Clark Fadel. All rights reserved.</h1>
             <div class="footer-icons">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/hatdog_098/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/clark-jhian-fadel-262060295/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/clarkfadel" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>
