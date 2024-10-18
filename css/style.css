@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 *{
-    font-family: Oxanium;
-    margin: 0;
+    font-family: Oxanium; /* Set the font to Oxanium */
+    margin: 0; /* Set the overall margin to 0 */
 }
 
 body{
-    background-color: #191919;
-    transition: background-color 0.3s;
-    overflow-x: hidden;
+    background-color: #191919; /* Overall background */
+    transition: background-color 0.3s; /* For the overlay */
+    overflow-x: hidden; /* To disable the x axis or bottom scrollbar */
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* For the nav scroll */
 }
 
+/* Overlay */
 .overlay {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -33,6 +34,7 @@ html {
     pointer-events: auto;
 }
 
+/* Scroll */
 .scroll{
     margin: 0 200px;
     margin-top: -100px;
@@ -60,6 +62,7 @@ html {
     opacity: 30%;
 }
 
+/* Scramble */
 .scramble-link {
     white-space: nowrap;
     text-align: center;
