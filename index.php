@@ -93,7 +93,7 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                         <div class="project-image-p1"></div>
                         <div class="project-content">
                             <h1>Ben Cladding</h1>
-                            <p>An architectural and engineering firm that specializes in facade design and engineering works. They approached me to create a custom website application that would highlight their expertise and streamline their content management.</p>
+                            <p>An architectural and engineering firm. They approached me to create a custom website application that would highlight their expertise and streamline their content management.</p>
                             <h6>Website Development</h6>
                             <!-- Navigation Arrows -->
                             <div class="swiper-navigation">
@@ -108,7 +108,7 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                         <div class="project-image-p2"></div>
                         <div class="project-content">
                             <h1>Greenviro</h1>
-                            <p>A packaging business for manufacturing and supplying high-quality tableware, food containers, and paper bags that are not only functional but also environmentally friendly. They approached me to design a semi e-commerce website that highlights their eco-conscious products.</p>
+                            <p>A packaging business for manufacturing and supplying high-quality tableware, food containers, and paper bags. They approached me to design a semi e-commerce website that highlights their eco-conscious products.</p>
                             <h6>Website Development</h6>
                             <!-- Navigation Arrows -->
                             <div class="swiper-navigation">
