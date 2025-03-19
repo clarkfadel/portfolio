@@ -5,33 +5,39 @@ if (!isset($_SESSION['admin'])) {
     exit;
 }
 
+$file_path = '../data/enrollments.json';
 $students_path = '../data/students.json';
-$sections_path = '../data/sections.json';
-$enrollments_path = '../data/enrollments.json';
-
+$enrollments = json_decode(file_get_contents($file_path), true) ?: [];
 $students = json_decode(file_get_contents($students_path), true) ?: [];
-$sections = json_decode(file_get_contents($sections_path), true) ?: [];
-$enrollments = json_decode(file_get_contents($enrollments_path), true) ?: [];
 
-$student_sections = [];
-foreach ($sections as $section) {
-    foreach ($section['students'] as $student_id) {
-        $student_sections[$student_id] = $section['name'];
+$existing_student_ids = array_column($students, 'student_id');
+$existing_student_names = array_column($students, 'student_name'); 
+
+$enrollments_updated = false;
+
+foreach ($enrollments as &$enrollment) {
+    if ($enrollment['status'] === 'Approved') {
+        if (!isset($enrollment['student_id'])) {
+            $enrollment['student_id'] = date('Y') . str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
+            $enrollment['section'] = 'N/A'; 
+            $enrollments_updated = true;
+        }
+
+        if (!in_array($enrollment['student_id'], $existing_student_ids) && !in_array($enrollment['student_name'], $existing_student_names)) {
+            $students[] = $enrollment;
+        }
     }
 }
 
-foreach ($students as &$student) {
-    if (isset($student['student_id'])) {
-        $student_id = $student['student_id'];
-        $student['section'] = $student_sections[$student_id] ?? 'N/A'; 
-    }
+if ($enrollments_updated) {
+    file_put_contents($file_path, json_encode($enrollments, JSON_PRETTY_PRINT));
 }
-unset($student);
 
 file_put_contents($students_path, json_encode($students, JSON_PRETTY_PRINT));
 
-$search_query = $_GET['search'] ?? '';
-if ($search_query !== '') {
+$search_query = isset($_GET['search']) ? trim($_GET['search']) : '';
+
+if (!empty($search_query)) {
     $students = array_filter($students, function ($student) use ($search_query) {
         return stripos($student['student_id'], $search_query) !== false || 
                stripos($student['student_name'], $search_query) !== false;
