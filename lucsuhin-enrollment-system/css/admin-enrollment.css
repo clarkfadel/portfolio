@@ -1,0 +1,84 @@
+.action-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 100px;
+    z-index: 10;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.menu-dropdown a:hover {
+    background: #f1f1f1;
+}
+
+.enrollment{
+    margin: 100px 300px;
+}
+
+.enrollment h1{
+    font-size: 50px;
+    color: #336D82;
+    margin-bottom: 10px;
+}
+
+label{
+    color: #336D82;
+    font-weight: 500;
+}
+
+select{
+    color: #F5ECE0;
+    background-color: #336D82;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #336D82;
+    color: #336D82;
+}
+
+td{
+    font-weight: 300;
+}
+
+.back{
+    background-color: #336D82;
+    color: #F5ECE0;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}

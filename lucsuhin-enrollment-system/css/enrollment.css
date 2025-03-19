@@ -1,0 +1,85 @@
+.enrollment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.enrollment h1{
+    font-size: 50px;
+    color: #336D82;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.enrollment form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #336D82;
+    padding: 40px 50px;
+}
+
+.enrollment-content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.enrollment-content div{
+    display: flex;
+    flex-direction: column;
+}
+
+.enrollment label{
+    color: #F5ECE0;
+    margin-bottom: 5px;
+}
+
+.enrollment input{
+    color: #336D82;
+    background-color: #F5ECE0;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.address{
+    width: 100%;
+}
+
+.enrollment select{
+    color: #336D82;
+    background-color: #F5ECE0;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.enrollment button{
+    background-color: #F5ECE0;
+    color: #336D82;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.enrollment button:hover{
+    cursor: pointer;
+}
+
+.enrollment h2{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #F5ECE0;
+    font-weight: 400;
+}
+
+.enrollment span a{
+    color: #F5ECE0;
+    font-weight: 600;
+}

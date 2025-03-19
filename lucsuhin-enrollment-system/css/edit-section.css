@@ -1,0 +1,114 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 300px;
+}
+
+.sections h1{
+    font-size: 50px;
+    color: #336D82;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sections h2{
+    font-size: 20px;
+    color: #336D82;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.sections h3{
+    font-size: 30px;
+    color: #F5ECE0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+form{
+    width: 100%;
+}
+
+label{
+    color: #336D82;
+    font-weight: 500;
+}
+
+input{
+    color: #F5ECE0;
+    background-color: #336D82;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: #F5ECE0;
+}
+
+select{
+    color: #F5ECE0;
+    background-color: #336D82;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.sections-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sections-table{
+    background-color: #336D82;
+    padding: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #336D82;
+    color: #336D82;
+}
+
+td{
+    font-weight: 300;
+}
+
+.sections button{
+    background-color: #336D82;
+    color: #F5ECE0;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.sections button:hover{
+    cursor: pointer;
+}
+
+.back{
+    background-color: #336D82;
+    color: #F5ECE0;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
