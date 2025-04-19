@@ -110,7 +110,7 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                     <div class="project-feedback">
                         <div class="feedback-content">
                             <h6>"</h6>
-                            <p>We needed a minimalistic, modern, and responsive website to impress investors and partners, and Ceroby knocked it out of the park. The design is sleek and the functionality is spot on. The whole process was smooth and efficient.</p>
+                            <p>We needed a minimalistic, modern, and responsive website to impress investors and partners, and Clark knocked it out of the park. The design is sleek and the functionality is spot on. The whole process was smooth and efficient.</p>
                         </div>
                         <div class="feedback-person">
                             <h2>Ignacio</h2>
