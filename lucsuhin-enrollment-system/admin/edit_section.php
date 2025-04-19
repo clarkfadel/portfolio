@@ -26,8 +26,9 @@ $section = $sections[$section_index];
 $section_grade = $section['grade_level'];
 
 $assigned_students = array_filter($students, function ($student) use ($section) {
-    return isset($student['section']) && $student['section'] === $section['name'];
+    return isset($student['student_id']) && in_array($student['student_id'], $section['students']);
 });
+
 
 $unassigned_students = array_filter($students, function ($student) use ($sections, $section_grade) {
     return (!isset($student['section']) || $student['section'] === 'N/A') && $student['grade'] === $section_grade;
@@ -49,9 +50,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     foreach ($students as &$student) {
         if (in_array($student['student_id'], $section['students'])) {
-            $student['section'] = $section['name'];
+            $student['section'] = $section['name']; 
+        } elseif ($student['section'] === $section['name'] && !in_array($student['student_id'], $section['students'])) {
+            $student['section'] = 'N/A'; 
         }
     }
+    
 
     $sections[$section_index] = $section;
     file_put_contents($sections_path, json_encode($sections, JSON_PRETTY_PRINT));

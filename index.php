@@ -58,11 +58,8 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                 <h6>I design and develop - <span>Website Applications</span></h6>
                 <a href="https://calendly.com/clarkfadel/30min" class="scramble-link" target="_blank">Schedule a Meeting</a>
                 <div class="left-image">
-                    <img src="images/shooting-star.png" alt="">
+                    <img src="images/line.png" alt="">
                 </div>
-            </div>
-            <div class="right-header">
-                <img src="images/header-img.svg" alt="">
             </div>
         </div>
     </header>
@@ -93,7 +90,8 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                         <div class="project-image-p1"></div>
                         <div class="project-content">
                             <h1>Ben Cladding</h1>
-                            <p>An architectural and engineering firm. They approached me to create a custom website application that would highlight their expertise and streamline their content management.</p>
+                            <p>An architectural and engineering firm.</p>
+                            <a href="projects/bencladding.php" class="scramble-link">View More</a>
                             <h6>Website Development</h6>
                             <!-- Navigation Arrows -->
                             <div class="swiper-navigation">
@@ -104,11 +102,12 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                         </div>
                     </div>
 
-                    <div class="swiper-slide project-slide p2">
-                        <div class="project-image-p2"></div>
+                    <div class="swiper-slide project-slide p3">
+                        <div class="project-image-p3"></div>
                         <div class="project-content">
-                            <h1>Greenviro</h1>
-                            <p>A packaging business for manufacturing and supplying high-quality tableware, food containers, and paper bags. They approached me to design a semi e-commerce website that highlights their eco-conscious products.</p>
+                            <h1>Palbites</h1>
+                            <p>A bakeshop dedicated to crafting fresh, high-quality pastries, bread, and cakes for every occasion</p>
+                            <a href="projects/palbites.php" class="scramble-link">View More</a>
                             <h6>Website Development</h6>
                             <!-- Navigation Arrows -->
                             <div class="swiper-navigation">
@@ -116,21 +115,6 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                                 <div class="swiper-button-next">&gt;</div>
                             </div>
                             <h2>02</h2>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide project-slide p3">
-                        <div class="project-image-p3"></div>
-                        <div class="project-content">
-                            <h1>Palbites</h1>
-                            <p>An upcoming project of Clark Fadel.</p>
-                            <h6>Website Development</h6>
-                            <!-- Navigation Arrows -->
-                            <div class="swiper-navigation">
-                                <div class="swiper-button-prev">&lt;</div>
-                                <div class="swiper-button-next">&gt;</div>
-                            </div>
-                            <h2>03</h2>
                         </div>
                     </div>
 
@@ -151,7 +135,7 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Footer -->
     <footer>
         <div class="footer">
             <h1>© 2024 Clark Fadel. All rights reserved.</h1>

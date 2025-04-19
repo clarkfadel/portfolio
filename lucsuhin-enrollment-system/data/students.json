@@ -1,2 +1,16 @@
 [
+    {
+        "parent_email": "cj@gmail.com",
+        "parent_name": "adas",
+        "parent_contact": "234243234",
+        "student_name": "test",
+        "birthdate": "2025-03-19",
+        "gender": "Male",
+        "address": "asda",
+        "grade": "1",
+        "document": "..\/data\/uploads\/1742395303_AutoRecovery save of Document2.pdf",
+        "status": "Approved",
+        "student_id": "2025680756",
+        "section": "ad"
+    }
 ]

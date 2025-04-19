@@ -1,3 +1,11 @@
 [
-
+    {
+        "section_id": "67dadd7c9a6d0",
+        "name": "asdasd",
+        "grade_level": "1",
+        "max_students": 3,
+        "students": [
+            "2025680756"
+        ]
+    }
 ]
