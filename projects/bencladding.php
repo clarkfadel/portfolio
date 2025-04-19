@@ -127,11 +127,11 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
         <section>
             <div class="pagination">
                 <div class="prev">
-                        <a href=""><i class="fa-solid fa-arrow-left"></i>Back</a>
+                        <a href="palbites.php"><i class="fa-solid fa-arrow-left"></i>Back</a>
                 </div>
 
                 <div class="prev-2">
-                    <a href=""><i class="fa-solid fa-arrow-left"></i>Prev</a>
+                    <a href="palbites.php"><i class="fa-solid fa-arrow-left"></i>Prev</a>
                 </div>
 
                 <div class="project-page">
@@ -139,12 +139,12 @@ $fontAwesomeJs = $_ENV['FONTAWESOME_JS'];
                 </div>
 
                 <div class="next-2">
-                    <a href="">Next<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="palbites.php">Next<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
 
                 <div class="next">
-                        <a href="">Next<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="palbites.php">Next<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
